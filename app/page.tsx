@@ -1,4 +1,5 @@
-import { Globe } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Globe, Shield } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -17,6 +18,24 @@ export default function Home() {
         </div>
         <p className="text-slate-900">Analyze flood risk using coordinate or upload images for AI-powered terrain anaylysis</p>
       </div>
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+      {/* input sections*/}
+      {/* card */}
+      <Card className="shadow-lg border-0 bg-white/80 backdrop-blur-sm">
+        <CardHeader>
+          <CardTitle className='flex items-center gap-2' >
+              <Shield className="h-5 w-5 text-blue-600"></Shield>
+              Analysis Methods
+          </CardTitle>
+        </CardHeader>
+
+        <CardContent>
+          
+        </CardContent>
+      </Card>
+      </div>
+
       </div>
       <p>hello world</p>
     </div>
