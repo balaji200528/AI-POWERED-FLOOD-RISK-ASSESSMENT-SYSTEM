@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Globe, Shield } from "lucide-react";
+import {Tabs , TabsList, TabsTrigger} from "@/components/ui/tabs"; 
+import { Globe, MapPin, Shield } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -29,9 +30,16 @@ export default function Home() {
               Analysis Methods
           </CardTitle>
         </CardHeader>
-
+              
         <CardContent>
-          
+              <Tabs>
+                <TabsList>
+                  <TabsTrigger value="coordinates" className="flex-items-center gap-2">
+                     <MapPin className="h-4 w-4"/>
+                     Coordinates
+                  </TabsTrigger>  
+                </TabsList>
+              </Tabs>
         </CardContent>
       </Card>
       </div>
